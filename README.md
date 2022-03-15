@@ -30,6 +30,7 @@ Upgrade from the original Deploy-Template with Auth via JWT.
     - Head to settings and reveal Config Vars
     - Add the Key `URI` and as Value paste in your connetion string (replace user
       and password with your values)
+    - Also add under `JWT_SECRET` a strong secret for your JWT.
     - Since we are already on Heroku, we need some kind of authentication for
       GitHub, in this case an API-Key. We can generate our API-Key in Heroku by clicking the
       User-icon (top-right) => Account settings => scroll down untill you see API-Key
