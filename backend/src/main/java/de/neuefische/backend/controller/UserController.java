@@ -12,6 +12,7 @@ import java.security.Principal;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/user")
 public class UserController {
 
@@ -26,6 +27,7 @@ public class UserController {
     @PostMapping
     public MyUser createUser(@RequestBody MyUser user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setRole("USER");
         return userService.createUser(user);
     }
 
