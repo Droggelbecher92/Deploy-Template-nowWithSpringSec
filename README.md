@@ -4,9 +4,7 @@
 Upgrade from the original Deploy-Template with Auth via JWT.
 
 ## Try it out
-- Standard react starting-page: https://kevinowens.herokuapp.com/
-- Simple DB- request to save new Document and show all Documents: https://kevinowens.herokuapp.com/api
-  (if you count the items, you know how many people visited the site :D)
+- Here you go: https://razor-ramon.herokuapp.com/
 
 ## - What you need:
 
