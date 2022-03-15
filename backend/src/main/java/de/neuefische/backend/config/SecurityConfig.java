@@ -42,6 +42,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .mvcMatchers(HttpMethod.POST, "/api/user").permitAll()
                 .mvcMatchers(HttpMethod.GET, "/**/{[path:[^\\.]*}").permitAll()
+                .mvcMatchers(HttpMethod.GET, "/").permitAll()
                 .mvcMatchers(HttpMethod.POST, "/auth").permitAll()
                 .antMatchers("/**").authenticated()
                 .and()
