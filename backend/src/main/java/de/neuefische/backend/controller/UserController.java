@@ -25,7 +25,7 @@ public class UserController {
     }
 
     @PostMapping
-    public MyUser createUser(@RequestBody MyUser user) {
+    public ResponseEntity<MyUser> createUser(@RequestBody MyUser user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setRole("USER");
         return userService.createUser(user);

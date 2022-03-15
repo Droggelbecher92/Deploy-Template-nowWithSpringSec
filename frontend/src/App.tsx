@@ -22,7 +22,13 @@ export default function App() {
             axios.post(`/api/user`,
                 {'username':newUsername, 'password':newPasswordOne})
                 .then(response => response.data)
-                .catch(e => setError(e.message))
+                .catch(e => {
+                    if (e.response.status===400){
+                        setError("Name schon vergeben")
+                    } else {
+                        setError(e.message)
+                    }
+                })
             setNewUsername('')
             setNewPasswordOne('')
             setNewPasswordTwo('')

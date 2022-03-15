@@ -12,12 +12,12 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16'
       - name: Build frontend
         run: |
           cd frontend
           npm install
-          CI=false npm run build  #Warnings are ignored / If you want to deploy Frontend without any warnings (HIGHLY RECOMMENDED!), remove "CI=flase" 
+          npm run build
       - uses: actions/upload-artifact@v2
         with:
           name: frontend-build
@@ -49,7 +49,7 @@ jobs:
     needs: build-backend
     environment: #optional, zeigt 'nur' den Link im Repo an
       name: template-heroku
-      url: https://kevinowens.herokuapp.com/ #change to your App-URL provided by heroku
+      url: https://razor-ramon.herokuapp.com/ #change to your App-URL provided by heroku
     env:
       HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
     steps:
@@ -61,6 +61,6 @@ jobs:
       - name: Login to heroku
         run: heroku container:login
       - name: Push docker container
-        run: heroku container:push web -a kevinowens #Change with your heroku-app name
+        run: heroku container:push web -a razor-ramon #Change with your heroku-app name
       - name: Deploy docker container
-        run: heroku container:release web -a kevinowens #Change with your heroku-app name
+        run: heroku container:release web -a razor-ramon #Change with your heroku-app name

@@ -2,6 +2,7 @@ package de.neuefische.backend.service;
 
 import de.neuefische.backend.model.MyUser;
 import de.neuefische.backend.repo.UserRepo;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -20,7 +21,10 @@ public class UserService {
         return userRepo.findByUsername(username);
     }
 
-    public MyUser createUser(MyUser user) {
-        return userRepo.save(user);
+    public ResponseEntity<MyUser> createUser(MyUser user) {
+        if (userRepo.findByUsername(user.getUsername()).isPresent()){
+            return ResponseEntity.badRequest().body(MyUser.builder().build());
+        }
+        return ResponseEntity.ok(userRepo.save(user));
     }
 }
