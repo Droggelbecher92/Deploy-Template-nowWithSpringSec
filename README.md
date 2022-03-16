@@ -40,10 +40,13 @@ Upgrade from the original Deploy-Template with Auth via JWT.
     - Save your API-Key as `git remote add origin git@github.com:Droggelbecher92/Deploy-Template-nowWithSpringSec.git
       git branch -M main
       git push -u origin main`, save, and now GitHub and Heroku can communicate.
-
-### Security
+    
 
 ## - What to change:
+
+- Security-stuff:
+    - Update the `MyUser` Model to you liking.
+    - Change the payload fpr your JWT to your liking. Currently the Username is set as sub, claims have iat/epx Date and roles. 
 
 - pom.xml:
   - change the finalName to your Appname.
