@@ -1,6 +1,6 @@
-package de.neuefische.backend.repo;
+package de.neuefische.backend.user;
 
-import de.neuefische.backend.model.MyUser;
+import de.neuefische.backend.models.user.MyUser;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

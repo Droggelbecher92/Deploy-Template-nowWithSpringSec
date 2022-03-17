@@ -1,9 +1,8 @@
-package de.neuefische.backend.controller;
+package de.neuefische.backend.user;
 
 
-import de.neuefische.backend.model.MyUser;
-import de.neuefische.backend.model.MyUserDto;
-import de.neuefische.backend.service.UserService;
+import de.neuefische.backend.models.user.MyUser;
+import de.neuefische.backend.models.user.MyUserDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package de.neuefische.backend.model;
+package de.neuefische.backend.models.user;
 
 import lombok.Builder;
 import lombok.Data;

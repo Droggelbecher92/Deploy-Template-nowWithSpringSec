@@ -1,8 +1,7 @@
-package de.neuefische.backend.controller;
+package de.neuefische.backend.security;
 
-import de.neuefische.backend.model.Credentials;
-import de.neuefische.backend.model.Token;
-import de.neuefische.backend.service.JwtService;
+import de.neuefische.backend.models.security.Credentials;
+import de.neuefische.backend.models.security.Token;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

@@ -1,8 +1,7 @@
-package de.neuefische.backend.model;
+package de.neuefische.backend.models.security;
 
 import lombok.Builder;
 import lombok.Data;
-import org.springframework.format.annotation.DateTimeFormat;
 
 @Data
 @Builder

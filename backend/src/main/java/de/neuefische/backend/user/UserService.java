@@ -1,7 +1,6 @@
-package de.neuefische.backend.service;
+package de.neuefische.backend.user;
 
-import de.neuefische.backend.model.MyUser;
-import de.neuefische.backend.repo.UserRepo;
+import de.neuefische.backend.models.user.MyUser;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 

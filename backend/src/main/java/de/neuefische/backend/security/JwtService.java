@@ -1,4 +1,4 @@
-package de.neuefische.backend.service;
+package de.neuefische.backend.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
