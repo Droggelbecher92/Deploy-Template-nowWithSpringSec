@@ -37,9 +37,7 @@ Upgrade from the original Deploy-Template with Auth via JWT.
 - Github:
     - We have save this API-Key in our Repo, to Login to Heroku.
     - Go to your Repo => Settings => Secrets => Actions => New Repository Secret
-    - Save your API-Key as `git remote add origin git@github.com:Droggelbecher92/Deploy-Template-nowWithSpringSec.git
-      git branch -M main
-      git push -u origin main`, save, and now GitHub and Heroku can communicate.
+    - Save your API-Key as `HEROKU_API_KEY`, save, and now GitHub and Heroku can communicate.
     
 
 ## - What to change:
