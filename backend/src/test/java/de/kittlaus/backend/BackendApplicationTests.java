@@ -1,4 +1,4 @@
-package de.neuefische.backend;
+package de.kittlaus.backend;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

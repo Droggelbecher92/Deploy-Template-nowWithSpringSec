@@ -1,6 +1,5 @@
-package de.neuefische.backend.security;
+package de.kittlaus.backend.security;
 
-import de.neuefische.backend.security.JWTAuthFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;

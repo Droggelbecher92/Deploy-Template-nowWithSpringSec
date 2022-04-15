@@ -1,6 +1,5 @@
-package de.neuefische.backend.security;
+package de.kittlaus.backend.security;
 
-import de.neuefische.backend.security.JwtService;
 import io.jsonwebtoken.Claims;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
