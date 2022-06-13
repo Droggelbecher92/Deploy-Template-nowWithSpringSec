@@ -13,6 +13,7 @@ Upgrade from the original Deploy-Template with Auth via JWT.
 
 ## - What to do:
 
+
 ### Deploy
 
 - Clone this Repo and connect it with a new Repo of yours(you can delete the .git Folder and make a new git init).
