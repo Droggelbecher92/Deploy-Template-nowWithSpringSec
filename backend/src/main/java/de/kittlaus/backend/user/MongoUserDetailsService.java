@@ -1,6 +1,5 @@
-package de.neuefische.backend.user;
+package de.kittlaus.backend.user;
 
-import de.neuefische.backend.user.UserService;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

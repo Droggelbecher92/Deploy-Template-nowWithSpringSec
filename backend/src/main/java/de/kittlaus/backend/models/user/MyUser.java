@@ -1,4 +1,4 @@
-package de.neuefische.backend.models.user;
+package de.kittlaus.backend.models.user;
 
 import lombok.Builder;
 import lombok.Data;

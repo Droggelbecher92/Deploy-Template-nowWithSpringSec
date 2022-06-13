@@ -1,7 +1,4 @@
-# Template for deployment with JWT Login
-
-
-Upgrade from the original Deploy-Template with Auth via JWT.
+# A HomePlaner
 
 ## Try it out
 - Here you go: https://razor-ramon.herokuapp.com/
@@ -65,3 +62,4 @@ Upgrade from the original Deploy-Template with Auth via JWT.
 
 ## - Problems
 - If you encounter any problems using this template, please let me know by stating an issue on GitHub.
+

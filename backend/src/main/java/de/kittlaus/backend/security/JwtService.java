@@ -1,4 +1,4 @@
-package de.neuefische.backend.security;
+package de.kittlaus.backend.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

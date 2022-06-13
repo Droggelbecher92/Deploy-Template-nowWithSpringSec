@@ -1,4 +1,4 @@
-package de.neuefische.backend.config;
+package de.kittlaus.backend.config;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 

@@ -1,7 +1,7 @@
-package de.neuefische.backend.security;
+package de.kittlaus.backend.security;
 
-import de.neuefische.backend.models.security.Credentials;
-import de.neuefische.backend.models.security.Token;
+import de.kittlaus.backend.models.security.Credentials;
+import de.kittlaus.backend.models.security.Token;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

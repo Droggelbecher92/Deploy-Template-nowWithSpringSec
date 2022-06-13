@@ -1,6 +1,6 @@
-package de.neuefische.backend.user;
+package de.kittlaus.backend.user;
 
-import de.neuefische.backend.models.user.MyUser;
+import de.kittlaus.backend.models.user.MyUser;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
