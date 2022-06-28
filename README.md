@@ -1,4 +1,4 @@
-# A HomePlaner
+# Deploy Template
 
 ## Try it out
 - Here you go: https://razor-ramon.herokuapp.com/
