@@ -48,8 +48,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: build-backend
     environment:
-      name: homeplaner-heroku
-      url: https://tk-homeplaner.herokuapp.com/
+      name: template-heroku
+      url: https://razor-ramon.herokuapp.com/
     env:
       HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
     steps:
@@ -61,6 +61,6 @@ jobs:
       - name: Login to heroku
         run: heroku container:login
       - name: Push docker container
-        run: heroku container:push web -a tk-homeplaner
+        run: heroku container:push web -a razor-ramon
       - name: Deploy docker container
-        run: heroku container:release web -a tk-homeplaner
+        run: heroku container:release web -a razor-ramon
