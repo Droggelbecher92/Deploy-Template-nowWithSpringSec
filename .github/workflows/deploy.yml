@@ -41,26 +41,28 @@ jobs:
         run: mvn -B package --file backend/pom.xml
       - uses: actions/upload-artifact@v2
         with:
-          name: homeplaner.jar
-          path: backend/target/homeplaner.jar
+          name: template.jar                 #.jar must be the same as 'finalName' in pom.xml
+          path: backend/target/template.jar  #.jar must be the same as 'finalName' in pom.xml
 
   deploy-heroku:
     runs-on: ubuntu-latest
     needs: build-backend
-    environment:
-      name: template-heroku
-      url: https://razor-ramon.herokuapp.com/
+    environment:                              #optional, only shows link in RepoPage
+      name: template-heroku                   #change environment name as you like
+      url: https://razor-ramon.herokuapp.com/ #change to your App-URL provided by heroku
+
     env:
       HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/download-artifact@v2
         with:
-          name: homeplaner.jar
+          name: template.jar                  #.jar must be the same as 'finalName' in pom.xml
           path: backend/target
       - name: Login to heroku
         run: heroku container:login
       - name: Push docker container
-        run: heroku container:push web -a razor-ramon
+        run: heroku container:push web -a razor-ramon      #Change with your heroku-app name
       - name: Deploy docker container
-        run: heroku container:release web -a razor-ramon
+        run: heroku container:release web -a razor-ramon   #Change with your heroku-app name
+
