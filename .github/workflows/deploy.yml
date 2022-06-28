@@ -50,6 +50,7 @@ jobs:
     environment:                              #optional, only shows link in RepoPage
       name: template-heroku                   #change environment name as you like
       url: https://razor-ramon.herokuapp.com/ #change to your App-URL provided by heroku
+
     env:
       HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
     steps:
@@ -64,3 +65,4 @@ jobs:
         run: heroku container:push web -a razor-ramon      #Change with your heroku-app name
       - name: Deploy docker container
         run: heroku container:release web -a razor-ramon   #Change with your heroku-app name
+
