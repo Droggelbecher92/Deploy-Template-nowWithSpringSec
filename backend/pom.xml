@@ -69,7 +69,7 @@
 
   <build>
     <finalName>
-      homeplaner <!-- Change to your App-Name -->
+      template <!-- Change to your App-Name -->
     </finalName>
     <plugins>
       <plugin>
