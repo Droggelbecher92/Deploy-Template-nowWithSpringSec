@@ -1,6 +1,6 @@
-# **deprecated** No more free tier on Heroku....
+# *deprecated* No more free tier on Heroku....
 
-# Deploy Template
+## Deploy Template
 
 ## Try it out
 - Here you go: https://razor-ramon.herokuapp.com/
